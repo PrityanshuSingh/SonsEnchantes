@@ -15,7 +15,7 @@ The SonsEnchantes (Enchanted Sounds) is an online platform designed to provide u
 
 * Educational Resources: The website will include informative content on the importance and benefits of sound in our lives. It will explain how specific frequencies, rhythms, or patterns can induce relaxation, reduce stress, and promote overall well-being. Users will have access to educational resources and materials on the healing properties of sound.
 
-* User Profiles: The platform will allow users to create profiles where they can save their preferred soundscapes, track their meditation progress, and engage with the community. User profiles will also provide the option to set meditation goals and receive personalized recommendations.
+* User Profiles: The platform will allow users to create profiles where they can save their preferred soundscapes, track their time spent and meditation progress. User profiles will provide the option to save their favourite tracks and also share it with others.
 
 ### TECHNOLOGY STACK -
 
