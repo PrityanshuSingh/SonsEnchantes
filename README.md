@@ -5,6 +5,11 @@
 
 The SonsEnchantes (Enchanted Sounds) is an online platform designed to provide users with an immersive and tranquil experience through the power of sound. It aims to promote relaxation, mindfulness, and a sense of calmness by offering a curated collection of soothing soundscapes and meditation tools.
 
+<img width="946" alt="slide1" src="https://github.com/PrityanshuSingh/SonsEnchantes/assets/84603998/567978cc-bcb2-4cba-b2b4-698daa2e6390">
+
+<img width="945" alt="slide2" src="https://github.com/PrityanshuSingh/SonsEnchantes/assets/84603998/5f071e55-16d2-45c5-9529-281ce07d64c3">
+
+
 ### KEY FEATURES -
 
 * Soundscapes: The website will offer a diverse range of high-quality soundscapes, including nature sounds, gentle instrumental music, and ambient sounds. Users will be able to choose and customize their preferred soundscapes to create a calming environment.
