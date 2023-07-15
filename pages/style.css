@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+
+html {
+  font-size: 80.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*PAGE HEADER*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: auto;
+  font-size: 3rem;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+  font-style: oblique;
+  color: whitesmoke;
+  font-weight:lighter;
+}
+
+.header .logo:hover {
+  margin-right: auto;
+  font-size: 4rem;
+  font-family:Brush Script MT, Brush Script Std, cursive;
+  font-style: oblique;
+  color:navajowhite;
+  
+}
+
+.header .logo i {
+  color:navajowhite;
+  height: auto;
+}
+
+.header .logo i:hover {
+  color:whitesmoke;
+  height: auto;
+}
+
+.header .navbar a {
+  margin-left: 1rem;
+  font-weight:300;
+  font-size: 1.7rem;
+  color: whitesmoke;
+}
+
+.header .navbar a:hover {
+  color: navajowhite;
+  font-weight:400;
+  font-size: 2.3rem;
+}
+
+.header .navbar .audio{
+  display: none; 
+}
+
+.header .navbar #nav-close {
+  font-size: 3rem;
+  cursor: pointer;
+  color: whitesmoke;
+  display: none;
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: navajowhite;
+  font-size: 3.3rem;
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+
+
+
+
+/*SEARCH FORM*/
+.search-form{  
+  position:fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+}
+
+.search-form.active{
+  transform:translateY(0%);
+}
+
+.search-form #close-search{
+
+  position: absolute;
+  top:2rem; right:2.5rem;
+  cursor: pointer;
+  color:whitesmoke;
+  font-size: 4rem;
+   
+}
+
+.search-form #close-search:hover{
+  color:navajowhite;
+  font-size:6rem
+}
+
+.search-form form{
+  width:70rem;
+  margin:0 2rem;
+  padding-bottom:2rem;
+  border-bottom:.2rem solid whitesmoke;
+  display: flex;
+  align-items:center;
+}
+
+.search-form form input{
+  width: 100%;
+  font-size: 2rem;
+  color:whitesmoke;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+
+.search-form form input::placeholder{
+  color:#aaa;
+  
+}
+
+
+.search-form label{
+  font-size:3rem;
+  cursor:pointer;
+  color:white;
+}
+
+.search-form label:hover{
+  color:navajowhite;
+  font-size: 4rem;
+}
+
+
+
+
+
+/*HOME SECTION*/
+section{
+  padding:5rem 9%;
+}
+
+.btn{
+  margin-top:0;
+  display:inline-block;
+  border:black;
+  color:navajowhite;
+  cursor:pointer;
+  background:none;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding:1rem 3rem;
+}
+
+.btn:hover{
+  background:black;
+  font-size:2.0rem;
+  opacity: .5;
+  border-radius: 12px;
+  color:whitesmoke;
+  box-shadow: 1rem 1rem 4rem rgb(255, 255, 255);
+}
+
+.home{
+  padding:0
+}
+
+.home .box{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content:center;
+  padding: 2rem 9%;
+
+  &.second .content h3{
+    color:whitesmoke;
+  }
+
+  &.second .content .s-box{
+    line-height: 2;
+    color:white;
+    font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+
+  &.second .content .s-box:hover{
+    background-color: #000;
+    color:navajowhite;
+    font-weight: 800;
+    opacity: .5;
+    border-radius: 25px;
+  }
+}
+
+.home .box .content {
+  margin-top: 8rem;
+  text-align: center;
+  width: 50rem;
+}
+
+.home .box .content span {
+  font-size: 2rem;
+  color:navajowhite;
+  
+}
+
+.home .box .content h3 {
+  font-size: 7rem;
+  color:rgb(29, 50, 50);
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.home .box .content h3:hover {
+  font-size: 8.5rem;
+}
+
+.home .box{
+  &.second .content h3:hover{
+    font-size: 8.5rem;
+    color:whitesmoke;
+  }
+}
+
+
+.home .box .s-box {
+  line-height: 2;
+  color:black;
+  font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+.home .box .s-box:hover{
+  background-color: #000;
+  color:navajowhite;
+  font-weight: 800;
+  opacity: .5;
+  border-radius: 25px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 3rem;
+  color:black;
+  font-weight: lighter;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  font-size: 4rem;
+  color: rgb(255, 222, 173);
+}
+
+
+
+
+
+
+/*ABOUT SECTION*/
+.about {
+  background: rgb(5, 14, 20);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.about .image1,
+.about .image2,
+.about .image3 {
+  position: relative;
+  flex: 2 2 42rem;
+  padding-top: 4rem;
+}
+
+.about .image2{
+  margin-bottom: 0rem;
+}
+
+/*2rem 2rem 14rem rgb(255, 255, 255);*/
+.about .image1 img {
+  width: 65%;
+  box-shadow: -1rem 1rem 1rem rgb(255, 222, 173);
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.about .image2 img {
+  width: 55%;
+  box-shadow: 1rem 1rem 1rem rgb(255, 222, 173);
+  position: absolute;
+  top:50%;
+  left: 55%;
+  transform: translate(-50%, -70%);
+  border-radius: 12px;
+}
+
+.about .image3 img {
+  width: 40%;
+  box-shadow: 1rem 1rem 1rem rgb(255, 222, 173);
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translate(-50%, -200%);
+  border-radius: 12px;
+}
+
+.about .image1 img:hover {
+  width: 70%;
+  box-shadow: 1rem 1rem 10rem rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+
+.about .image2 img:hover {
+  width: 60%;
+  box-shadow: 1rem 1rem 10rem rgb(255, 255, 255);
+  position: absolute;
+  top:50%;
+  left: 55%;
+  transform: translate(-50%, -70%);
+}
+
+.about .image3 img:hover {
+  width: 45%;
+  box-shadow: 1rem 1rem 10rem rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translate(-50%, -200%);
+}
+
+.about .heading {
+  flex: 1 1 100%;
+  text-align: right;
+  margin-top: 3rem;
+  margin-bottom: -3.5rem;
+}
+
+.about .heading h3 {
+  font-size: 4.5rem;
+  font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:navajowhite;
+}
+
+.about .content {
+  flex: 1 1 100%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.about .content {
+  font-size: 4rem;
+  font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.about .content .a-box p {
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0rem 0;
+  text-transform: none;
+  line-height: 2;
+}
+
+.about .content .a-box p:hover{
+  color:white;
+  font-weight: 800;
+  border-radius: 25px;
+  box-shadow: 1rem 1rem 2rem rgb(255, 222, 173);
+}
+
+.about .a-box .additional-text {
+  display: none;
+}
+
+.about .a-box .additional-text.show {
+  display: block;
+}
+
+
+
+
+
+
+/*GENRE SECTION*/
+.genre{
+  background: rgb(5, 14, 20);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 5;
+}
+
+.genre .g-heading{
+  flex: 1 1 100%;
+  text-align: right;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+  font-size: 4.5rem;
+  font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:navajowhite;
+}
+
+.g-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.g-box {
+  width: 30%;
+  float:left;
+  box-sizing: border-box;
+  padding: 25px;
+  margin-bottom: 4rem;
+  background: linear-gradient(rgb(18, 60, 89),rgb(5, 14, 20));
+  border-radius: 12px;
+  box-shadow: 1rem 1rem 1rem rgb(255, 222, 173);
+}
+
+.g-box:nth-last-child(-n+2) {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.g-box:hover{
+  box-shadow: 1rem 1rem 10rem rgb(255, 255, 255);
+  background: linear-gradient(navajowhite,rgb(5, 14, 20));
+  width:35%;
+  height: 70%;
+
+  .g-content h3 {
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .audio audio {
+    background-color: whitesmoke;
+    box-shadow: 1rem 1rem 4rem black;
+    opacity: .7.5;
+  }
+
+  .audio audio::-webkit-media-controls-panel {
+    background-color: whitesmoke;
+  
+  }  
+}
+
+.g-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.g-image img:hover{
+  border-radius: 0px;
+  box-shadow: 1rem 1rem 10rem rgb(5, 14, 20);
+}
+
+.g-content {
+  text-align: center;
+}
+
+.g-content h3 {
+  margin-top: .5rem;
+  font-size: 2rem;
+  color: navajowhite;
+}
+
+.g-content p {
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.audio {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+.audio audio {
+  width: 80%;
+  border-radius: 12px;
+}
+
+.audio audio {
+  background-color: navajowhite;
+  box-shadow: .5rem .5rem 1rem black;
+  opacity: .8;
+}
+
+.audio audio::-webkit-media-controls-panel {
+  background-color: navajowhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER SECTION*/
+.footer{
+  background: linear-gradient(rgb(5, 14, 20) 75%,rgb(18, 60, 89));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 5;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.box-container .box {
+  margin-top: 3rem;
+  padding-left: 5rem;
+  margin-bottom: 4rem;
+}
+
+.box-container .box h3{
+  padding:1.5rem 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color:whitesmoke;
+}
+
+.box-container .box a{
+  display:block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color:whitesmoke;
+  padding:1rem 0;
+  
+}
+
+.box-container .box i{
+  color:navajowhite;
+  padding-right: .5rem;
+}
+
+.box-container .box a:hover{
+  display:block;
+  font-size:1.8rem;
+  color:navajowhite;
+  padding:1rem 0;
+
+}
+
+.box-container .box i:hover{
+  color:whitesmoke;
+  padding-right: 1.5rem;
+  
+}
+
+.credit{
+  text-align:center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size:1rem;
+  color:whitesmoke;
+  max-width: 25rem;
+  margin:0 auto;
+}
+
+.credit span{
+  color:navajowhite;
+}
+
+.credit:hover{
+  text-align:center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size:1.2rem;
+  color:whitesmoke;
+  max-width: 25rem;
+  margin:0 auto;
+  box-shadow: 1rem 1rem 2rem navajowhite;
+  border-radius: 12px; 
+  opacity: 2;
+}
+
+.credit span:hover{
+  color:whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .header {
+    padding:2rem;
+  }
+
+  section{
+    padding:3rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 7rem;
+  }
+
+  .home .box{
+    padding:2rem;
+    justify-content:center;
+    background-position: right;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /*HEADER*/
+  .header #menu-btn {
+    display: inline-block;
+  }
+
+  .header .logo {
+    margin-right: auto;
+    margin-top: 2.5rem;
+    font-size: 4rem;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-style: oblique;
+    color: whitesmoke;
+    font-weight:lighter;
+  }
+  
+  .header .logo:hover {
+    margin-right: auto;
+    font-size: 4.5rem;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-style: oblique;
+    color:navajowhite;
+    
+  }
+  
+  .header .logo i {
+    color:navajowhite;
+    height: auto;
+  }
+  
+  .header .logo i:hover {
+    color:whitesmoke;
+    height: auto;
+  }
+
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.8;
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header .navbar.active {
+    transform: translateX(0);
+  }
+  
+
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+
+  .header .navbar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color:whitesmoke;
+  }
+
+  .header .navbar #nav-close:hover {
+    color:navajowhite;
+    font-size: 4rem;
+  }
+
+  /*HOME*/
+  .home .box .content h3{
+    margin-bottom: 3rem;
+  }
+  
+  .btn{
+    margin-top: 3rem;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    display: none;
+  }
+
+
+  /*ABOUT*/
+  .about .content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .about .image3 img {
+    width: 40%;
+    box-shadow: 1rem 1rem 1rem rgb(255, 222, 173);
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -240%);
+    border-radius: 12px;
+  }
+
+  .about .heading {
+    text-align: center;
+  }
+
+  .about .heading h3{
+    font-size: 3.5rem;
+  }
+
+  .about .content h3{
+    font-size: 3.5rem;
+  }
+
+
+  .about .a-box{
+    padding-top: 2rem;
+  }
+
+
+  /*GENRE*/
+  .genre .g-heading{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  
+  .g-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+
+  }
+
+  .g-box {
+    width: 80%;
+  }
+
+  .g-box:nth-last-child(-n+1) {
+    margin-top: 3rem ;
+    justify-content: center;
+  }
+
+  .g-box:hover{
+    width: 90%;
+    height: 100%;
+
+    .g-content h3{
+      font-size: 2.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .audio {
+      font-size: 1rem;
+      margin-top: 3rem;
+      margin-bottom: .5rem;
+    }
+    
+    .audio audio {
+      width: 90%;
+      border-radius: 12px;
+    }
+  }
+  
+  .g-box .content {
+    text-align: center;
+  }
+
+  .g-content h3 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    color: navajowhite;
+  }
+  
+  .g-content p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+  }
+
+  .audio {
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+  }
+  
+  .audio audio {
+    width: 80%;
+    border-radius: 12px;
+  }
+
+
+
+  /*FOOTER*/
+  .box-container {
+    display:grid;
+    text-align: center;
+    justify-content:center;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  
+  .box-container .box {
+    padding-left:0rem;
+    margin-bottom: 3rem;
+  }
+
+  .box-container .box a {
+    font-weight: 600;
+  }
+
+
+
+}
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 

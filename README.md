@@ -29,3 +29,13 @@ The SonsEnchantes (Enchanted Sounds) is an online platform designed to provide u
 * Audio Playback: HTML5 audio element
 
 * Visualizations: CSS animations or Canvas
+
+### HOW TO RUN -
+
+* Open the Terminal.
+
+* Make sure to install Express as a dependency for your project using : "npm install express" command.
+
+* Open the directory "pages" using : "cd pages".
+
+* Run the command : "node start.js" and enjoy the blissful experience of SonsEnchantes.

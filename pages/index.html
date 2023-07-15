@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>
+            Sonenchantes Audio
+        </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./style.css"> 
+    </head>
+    
+    <body>
+
+        <!--page header-->
+        <header class="header">
+            <a href="#" class="logo" onmouseover="playAudio('intro')" onmouseout="pauseAudio('intro')">
+                <i class="fas fa-music"></i> Sons Enchantés
+                <div class="audio">
+                    <audio id="intro">
+                    <source src="audios/Home section/logo/sons enchantes.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+            <nav class="navbar">
+                <div id="nav-close" class="fas fa-times"></div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#genre">Genre</a>
+                <a href="#footer">Contact Us</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+            </div>
+        </header>
+        <!--page header ends-->
+
+        <!--search form-->
+        <div class="search-form">
+            <div id="close-search" class="fas fa-times"></div>
+
+            <form action="">
+                <input type="search" name="" placeholder="Search here..." id="search-box"> 
+                <label for="search-box" class="fas fa-search"></label>
+            </form>   
+        </div>
+        <!--search ends-->
+
+        <!--Home section starts-->
+        <section class="home" id="home">
+
+            <div class="swiper home-slider">
+
+                <div class="swiper-wrapper">
+
+                    <!--1st slide-->
+                    <div class="swiper-slide">
+                        <div class="box" style="background: url(images/nature.jpg) no-repeat;">
+                            <div class="content">
+
+                                <div class="audio">
+                                    <audio id="nature">
+                                    <source src="audios/Home section/slides/1-forest-with-small-river-birds-and-nature-field-recording-6735.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+
+                                <span>Connect with</span>
+                                <h3 onmouseover="playAudio('nature')" onmouseout="pauseAudio('nature')">Nature</h3>
+                                <div class="s-box" onmouseover="playAudio('nature')" onmouseout="pauseAudio('nature')">
+                                Immerse yourself in the captivating melodies inspired by the rhythmic symphony of the natural world. 
+                                Let the music transport you to lush forests, serene waterfalls, and vast landscapes, where every note resonates 
+                                within oneself and with the harmony of the nature. 
+                                </div>
+                                <a href="#genre" class="btn">EXPLORE</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--2nd slide-->
+                    <div class="swiper-slide">
+                        <div class="box second" style="background: url(images/music.jpg) no-repeat;">
+                            <div class="content">
+
+                                <div class="audio">
+                                    <audio id="music">
+                                    <source src="audios/Home section/slides/2-summer-walk-152722.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+
+                                <span>Synchronize with</span>
+                                <h3 onmouseover="playAudio('music')" onmouseout="pauseAudio('music')">Music</h3>
+                                <div class="s-box" onmouseover="playAudio('music')" onmouseout="pauseAudio('music')">
+                                Dive into the captivating world of synchronization, where music becomes your guide. 
+                                Feel the pulse of the rhythm as it resonates within you, syncing your heartbeat with the melodies. 
+                                Allow the music to take control, as it harmonizes with your emotions and moves your body in perfect rhythm.
+                                </div>
+                                <a href="#genre" class="btn">EXPLORE</a>
+
+                            </div>    
+                        </div>
+                    </div>
+
+                    <!--3rd slide-->
+                    <div class="swiper-slide">
+                        <div class="box" style="background: url(images/ambience.jpg) no-repeat;">
+                            <div class="content">
+
+                                <div class="audio">
+                                    <audio id="ambience">
+                                    <source src="audios/Home section/slides/3-relaxing-music-part-1-141198.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+
+                                <span>Feel the</span>
+                                <h3 onmouseover="playAudio('ambience')" onmouseout="pauseAudio('ambience')">Ambience</h3>
+                                <div class="s-box" onmouseover="playAudio('ambience')" onmouseout="pauseAudio('ambience')">
+                                    Let the soothing melodies transport you to a realm of tranquility and inspiration. 
+                                    Experience the gentle whispers of the piano, the soul-stirring notes of the violin, the rhythmic 
+                                    beats of the drums, and the ethereal sounds of various instruments blending harmoniously. 
+                                </div>
+                                <a href="#genre" class="btn">EXPLORE</a>
+
+                            </div>    
+                        </div>
+                    </div>
+
+                </div>    
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </section>
+        <!--Home section ends-->
+
+        <!--About section starts-->
+        <section class="about" id="about">
+            <div class="heading">
+                <h3>Journey to Serenity</h3>
+            </div>
+
+            <div class="image1">
+                <img src="images/1.jpg" alt="Image 1">
+            </div>
+            <div class="image2">
+                <img src="images/2.jpg" alt="Image 2">
+            </div>
+            <div class="image3">
+                <img src="images/3.jpg" alt="Image 3">
+            </div>
+
+            <div class="content">
+                <h3>Through melodies</h3>
+
+                <div class="a-box">
+                    <p>At Sons Enchantes, we believe that music has the power to heal, inspire, and create harmony within our souls. 
+                        Our mission is to curate a collection of mesmerizing melodies and captivating compositions that transport you to a realm of tranquility and inner peace. 
+                    </p>
+                    <p class="additional-text">Embark on a transformative journey to serenity where the gentle melodies of music guide you towards a state of tranquility. 
+                        Immerse yourself in the soothing rhythms and harmonious melodies that uplift the soul and rejuvenate the spirit. Our mission is 
+                        to create a sanctuary of calmness, offering a respite from the noise and chaos of everyday life. 
+                        Join us in this beautiful exploration of inner peace and discover the power of melody in creating moments of serenity.
+                    </p>
+                </div>
+
+                <a href="#" class="btn read-more">Read More</a>
+            </div>
+        </section>
+        <!--About section ends-->
+
+
+        <!--Genre section starts-->
+        <section class="genre" id="genre">
+            <div class="g-heading">
+                <h3>popular genres</h3>
+            </div>
+
+            <div class="g-box-container">
+
+                <!--1st box-->
+                <div class="g-box">
+                    <div class="g-image">
+                        <img src="images/g-image/g-nature2.jpg" alt="">
+                    </div>
+                    <div class="g-content">
+                        <h3>Nature Sounds</h3>
+                        <p>Sounds such as flowing water, chirping birds, or gentle rain, can evoke a sense of tranquility and calmness within...</p>
+                        <div class="audio">
+                            <audio controls>
+                            <source src="audios/1_Nature-sounds/jackmichaelking__gentle-ocean-waves-birdsong-and-gull.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a href="#" class="btn">Dive in</a>
+                    </div>
+                </div>
+
+                <!--2nd box-->
+                <div class="g-box">
+                    <div class="g-image">
+                        <img src="images/g-image/g-classical.jpg" alt="">
+                    </div>
+                    <div class="g-content">
+                        <h3>Classical</h3>
+                        <p>Known for its complexity, beauty, and emotional depth, it includes orchestral works, chamber music, and more...</p>
+                        <div class="audio">
+                            <audio controls>
+                            <source src="audios/2_Classical/Gloria-in-D-Major-RV-589-Qui-Sedes-Ad-Dexteram-Patris-Allegro-CLH011001.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a href="#" class="btn">Dive in</a>
+                    </div>
+                </div>
+
+                <!--3rd box-->
+                <div class="g-box">
+                    <div class="g-image">
+                        <img src="images/g-image/g-instrumental3.jpg" alt="">
+                    </div>
+                    <div class="g-content">
+                        <h3>Instrumental</h3>
+                        <p>Focus on the melodies, harmonies, and expressiveness of the instruments such as solo piano, acoustic guitar and many more...</p>
+                        <div class="audio">
+                            <audio controls>
+                            <source src="audios/3_Instrumental/Yiruma_-_River_Flows_in_You_(ColdMP3.com).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a href="#" class="btn">Dive in</a>
+                    </div>
+                </div>
+
+                <!--4th box-->
+                <div class="g-box">
+                    <div class="g-image">
+                        <img src="images/g-image/g-jazz3.jpg" alt="">
+                    </div>
+                    <div class="g-content">
+                        <h3>Jazz</h3>
+                        <p>With its captivating improvisation and rich harmonies, immerse into a world of sophisticated elegance and heartfelt emotions...</p>
+                        <div class="audio">
+                            <audio controls>
+                            <source src="audios/4_Jazz/glass-of-wine-143532.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a href="#" class="btn">Dive in</a>
+                    </div>
+                </div>
+
+                <!--5th box-->
+                <div class="g-box">
+                    <div class="g-image">
+                        <img src="images/g-image/g-ambient.jpg" alt="">
+                    </div>
+                    <div class="g-content">
+                        <h3>Ambient</h3>
+                        <p>Creating a calming and atmospheric backdrop with its subtle melodies, and spacious arrangements promoting relaxation and mindfulness...</p>
+                        <div class="audio">
+                            <audio controls>
+                            <source src="audios/5_Ambient/MANTRON.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a href="#" class="btn">Dive in</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--Genre section ends-->
+
+
+        <!--Footer section starts-->
+        <section class="footer" id="footer">
+            <div class="box-container">
+                
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#genre">Genre</a>
+                </div>
+                
+                <div class="box">
+                    <h3>Contact info</h3>
+                    <a href="tel:+918276278473"><i class="fas fa-phone"></i> +91 827-627-8473</a>
+                    <a href="tel:+918653463463"><i class="fas fa-phone"></i> +91 865-346-3463</a>
+                    <a href="mailto:prityanshusingh2003@gmail.com"><i class="fas fa-envelope"></i> prityanshusingh2003@gmail.com</a>
+                    <a href="https://tinyurl.com/4p3bwb4h"><i class="fas fa-map"></i> Uttar Pradesh, India - 246761</a>  
+                  </div>
+                  
+                  <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="https://instagram.com/prityanshu__0111?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.linkedin.com/in/prityanshu-singh-a23115248"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="https://github.com/PrityanshuSingh?fbclid=PAAaa5rY1-GB0XWcIJmb6QDBsajl1Tz_WRCMYJRzkEeUGqFgFhyNCKIK4p_Ss">
+                        <i class="fab fa-github"></i> Github</a>
+                  </div>
+                  
+            </div>
+
+            <div class="credit">
+                <div class="c-box">
+                     created by <span> Prityanshu Singh </span> with &lt3 
+                </div>
+            </div>
+
+        </section>
+        <!--Footer section ends-->
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./script.js"></script>
+
+    </body>
+</html> 
