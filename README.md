@@ -24,7 +24,7 @@ The SonsEnchantes (Enchanted Sounds) is an online platform designed to provide u
 
 ### TECHNOLOGY STACK -
 
-* Front-end: HTML, CSS, JavaScript
+* Front-end: HTML, CSS, Vanilla.js
 
 * Audio Playback: HTML5 audio element
 
