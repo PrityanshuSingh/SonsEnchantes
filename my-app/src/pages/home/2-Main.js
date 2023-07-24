@@ -1,4 +1,4 @@
-import React, { useRef} from 'react';
+import React, { useRef, useState } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,33 +14,38 @@ export default function Main() {
         nature: useRef(null),
         music: useRef(null),
         ambience: useRef(null)
-        
     };
     
+    const [userInteracted, setuserInteracted] = useState(false);
+    const handleWrapperClick = () => {
+        setuserInteracted(true);
+    };
+   
     const playAudio = (audioId) => {
         const audioRef = audioRefs[audioId];
-        if (audioRef.current) {
+        if (userInteracted && audioRef.current) {
           audioRef.current.play();
         }
     };
     
     const pauseAudio = (audioId) => {
         const audioRef = audioRefs[audioId];
-        if (audioRef.current) {
+        if (userInteracted && audioRef.current) {
           audioRef.current.pause();
         }
     };
 
+
     return (
     <>
         {/*Home (Main) section starts*/}
-        <section class="home" id="home">
+        <section className="home" id="home">
 
-            <div class="swiper-home-slider">
+            <div className="swiper-home-slider" onClick={handleWrapperClick}>
 
                 <Swiper 
                 modules={[Navigation]} 
-                class="swiper-wrapper"
+                className="swiper-wrapper"
                 loop={true}
                 navigation={{
                     nextEl: '.swiper-button-next',
@@ -112,8 +117,8 @@ export default function Main() {
 
                 </Swiper>    
                 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
+                <div className="swiper-button-prev"></div>
 
             </div>
         </section>

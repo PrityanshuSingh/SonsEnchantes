@@ -6,6 +6,7 @@ Note : the link of this file is not being used anywhere, it can be
        used later when the project will become more complex and big.*/
 
 
+//import React, { useEffect, useRef, useState } from 'react';      
 /*
 NAVIGATION BAR FUNCTIONALITY
 useEffect(() => {
@@ -77,13 +78,6 @@ const playAudio = (audioId) => {
     audioRef.current.play();
   }
 };
-
-const pauseAudio = (audioId) => {
-  const audioRef = audioRefs[audioId];
-  if (audioRef.current) {
-    audioRef.current.pause();
-  }
-};
 */
 
 
@@ -98,19 +92,23 @@ const audioRefs = {
   nature: useRef(null),
   music: useRef(null),
   ambience: useRef(null)
-  
+};
+
+const [userInteracted, setuserInteracted] = useState(false);
+const handleWrapperClick = () => {
+  setuserInteracted(true);
 };
 
 const playAudio = (audioId) => {
   const audioRef = audioRefs[audioId];
-  if (audioRef.current) {
+  if (userInteracted && audioRef.current) {
     audioRef.current.play();
   }
 };
 
 const pauseAudio = (audioId) => {
   const audioRef = audioRefs[audioId];
-  if (audioRef.current) {
+  if (userInteracted && audioRef.current) {
     audioRef.current.pause();
   }
 };

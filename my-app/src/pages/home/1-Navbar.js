@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,} from 'react';
 
 export default function Navbar() {
 
@@ -73,46 +73,39 @@ export default function Navbar() {
         }
     };
     
-    const pauseAudio = (audioId) => {
-        const audioRef = audioRefs[audioId];
-        if (audioRef.current) {
-          audioRef.current.pause();
-        }
-    };
-  
     return (
     <>
 
       {/*page header and navbar*/}
-      <header class="header">
-          <a href="#" class="logo" onMouseOver={() => playAudio('intro')} onMouseOut={() => pauseAudio('intro')}>
-              <i class="fas fa-music"></i> Sons Enchantés
-              <div class="audio">
+      <header className="header">
+          <a href="#" className="logo" onClick={() => playAudio('intro')}>
+              <i className="fas fa-music"></i> Sons Enchantés
+              <div className="audio">
                   <audio ref={audioRefs.intro} id="intro">
                         <source src="assets/audios/Home section/logo/sons enchantes.mp3" type="audio/mpeg"/>
                   </audio>
               </div>
           </a>
-          <nav class="navbar">
-              <div id="nav-close" class="fas fa-times"></div>
+          <nav className="navbar">
+              <div id="nav-close" className="fas fa-times"></div>
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#genre">Genre</a>
               <a href="#footer">Contact Us</a>
           </nav>
 
-          <div class="icons">
-              <div id="menu-btn" class="fas fa-bars"></div>
-              <div id="search-btn" class="fas fa-search"></div>
+          <div className="icons">
+              <div id="menu-btn" className="fas fa-bars"></div>
+              <div id="search-btn" className="fas fa-search"></div>
           </div>
 
           {/*search form*/}
-          <div class="search-form">
-              <div id="close-search" class="fas fa-times"></div>
+          <div className="search-form">
+              <div id="close-search" className="fas fa-times"></div>
 
               <form action="">
                   <input type="search" name="" placeholder="Search here..." id="search-box" /> 
-                  <label for="search-box" class="fas fa-search"></label>
+                  <label for="search-box" className="fas fa-search"></label>
               </form>   
           </div>
           {/* search ends */}
