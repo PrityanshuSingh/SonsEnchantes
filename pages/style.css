@@ -22,7 +22,7 @@ body {
 }
 
 
-/*PAGE HEADER*/
+/*PAGE NAVBAR AND HEADER*/
 .header {
   position: fixed;
   top: 0;
@@ -67,6 +67,7 @@ body {
   font-weight:300;
   font-size: 1.7rem;
   color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header .navbar a:hover {
@@ -540,6 +541,7 @@ section{
 .g-content p {
   font-size: 1rem;
   color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
 }
 
 .audio {
@@ -608,6 +610,7 @@ section{
   font-weight: 700;
   text-transform: capitalize;
   color:whitesmoke;
+  font-family: 'Poppins', sans-serif;
 }
 
 .box-container .box a{
@@ -616,7 +619,7 @@ section{
   font-weight: 500;
   color:whitesmoke;
   padding:1rem 0;
-  
+  font-family: 'Poppins', sans-serif;
 }
 
 .box-container .box i{
