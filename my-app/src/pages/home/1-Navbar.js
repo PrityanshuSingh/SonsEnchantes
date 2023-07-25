@@ -105,7 +105,7 @@ export default function Navbar() {
 
               <form action="">
                   <input type="search" name="" placeholder="Search here..." id="search-box" /> 
-                  <label for="search-box" className="fas fa-search"></label>
+                  <label htmlFor="search-box" className="fas fa-search"></label>
               </form>   
           </div>
           {/* search ends */}
