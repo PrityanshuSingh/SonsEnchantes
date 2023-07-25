@@ -24,11 +24,6 @@ export default function Navbar() {
         navbar.classList.remove('active');
         };
     
-        const handleWindowScroll = () => {
-        const navbar = document.querySelector('.header .navbar');
-        navbar.classList.remove('active');
-        };
-    
         //defining functions for search button
         const handleSearchButtonClick = () => {
         const searchform = document.querySelector('.search-form');
@@ -37,6 +32,14 @@ export default function Navbar() {
     
         const handleCloseSearchClick = () => {
         const searchform = document.querySelector('.search-form');
+        searchform.classList.remove('active');
+        };
+
+        //window scroll
+        const handleWindowScroll = () => {
+        const navbar = document.querySelector('.header .navbar');
+        const searchform = document.querySelector('.search-form');
+        navbar.classList.remove('active');
         searchform.classList.remove('active');
         };
     
